@@ -3,3 +3,5 @@ docker run -it --platform linux/386 --name cbc-lab -v "${PWD}:/app" dev-32bit
 
 # forver use
 docker start -ai cbc-lab
+echo 'export PATH=$PATH:/usr/local/cbc/bin' >> ~/.bashrc
+source ~/.bashrc
